@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+
+
+<h1 id="title">Survey Form</h1>
+
+<div id="form-container">
+  <p id="question">Would you like to take my survey??</p>
+  <button id="yes-button">YES</button>
+  <button id="no-button">NO</button>
+  <form id="survey-form" class="hidden">
+    <p id="description">What Kind Of Animals Do You Like?</p>    
+    
+    <div id="container">
+      <label class="labels" id="name-label" for="name">Name:</label>
+      <input class="inputs" id="name" type="text" placeholder="Enter Your Name" required>
+
+      <label class="labels" id="email-label" for="email">Email:</label>        
+      <input class="inputs" id="email" type="email" placeholder="Enter Your Email" required>
+      
+      <label class="labels" id="number-label" for="number">How many animals do you share your home with?:</label>
+      <input class="inputs" id="number" type="number" min="0" max="100" placeholder="0" required>
+ 
+      <label class="labels check-label" for="checkbox">Select the types of animals that you LOVE:</label> 
+      <ul class="input">
+        <li>
+          <input class="checkbox" type="checkbox" name="dogs" value="Dogs">Dogs<br>          
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox" name="cats" value="Cats">Cats<br>
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox" name="rabbits" value="Rabbits">Rabbits<br>        
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox" name="rabbits" value="Rabbits">Birds<br>        
+        </li>
+        <li>
+          <input class="checkbox" type="checkbox" name="rabbits" value="Mice">Mice<br>        
+        </li>
+      </ul>
+      
+      <label class="labels" for="dropdown">What animal do you dislike most?:</label>
+      <select class="inputs" name="dropdown" id="dropdown">
+        <option value="">--Select An Option--</option>
+        <option value="None">None, I love all animals</option>
+        <option value="Dogs">Dogs</option>
+        <option value="Cats">Cats</option>
+        <option value="Rabbits">Rabbits</option>
+        <option value="Birds">Birds</option>
+        <option value="Mice">Mice</option>
+      </select>
+      
+      <label class="labels" for="radio">What is your age range?:</label>
+      <div class="inputs">
+        <input type="radio" name="age-range" value="8-16">6-15<br>
+        <input type="radio" name="age-range" value="8-16">16-25<br>
+        <input type="radio" name="age-range" value="8-16">26-35<br>
+        <input type="radio" name="age-range" value="8-16">36-45<br>
+        <input type="radio" name="age-range" value="8-16">46-55<br>
+        <input type="radio" name="age-range" value="8-16">56-65<br>
+        <input type="radio" name="age-range" value="8-16">66-75<br>
+        <input type="radio" name="age-range" value="8-16">76-85<br>
+        <input type="radio" name="age-range" value="8-16">86-95<br>
+      </div>
+    </div>
+    <label class="labels" for="animal-names">Share a story about one of your pets below</label>
+    <textarea class="inputs" name="animal-names" cols="20" rows="10"></textarea><br>
+    <input type=submit id="submit" value="Submit"></input>
+  </form>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

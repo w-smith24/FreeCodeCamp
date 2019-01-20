@@ -1,0 +1,75 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#main {
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "image image image"
+    "content content content"
+    "footer footer footer";
+  grid-row-gap: 20px;
+  background: radial-gradient(#777, #bbb);
+  text-align: center;
+}
+
+#header {
+  grid-area: header;
+  background: url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX30297152.jpg);
+  color: #999;
+}
+
+#header-image {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+
+#title {
+  font-size: 100px;
+  margin: auto;
+  padding: 50px;
+  text-decoration: underline;
+}
+
+#img-div {
+  grid-area: image;
+}
+
+#img-div h2 {
+  font-size: 45px;
+}
+
+#image {
+  width: 75%;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+#tribute-info {
+  grid-area: content;
+}
+
+.info {
+  list-style-type: none;
+  text-align: center;
+}
+
+.post {
+  border: 5px solid black;
+  font-size: 25px;
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+#tribute-link {
+  font-size: 30px;
+}
