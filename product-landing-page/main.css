@@ -5,10 +5,21 @@
   body {
     padding: 0;
     margin: 0;
+    background-color: #e2d5c3;
+  }
+
+  #page-container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: 
+      "header"
+      "content"
+      "footer";
   }
   
   #header {
-    position: fixed;
+    grid-area: header;
+    position: sticky;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -16,7 +27,7 @@
     background: #FDC830;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    width: 100%;
+    width: 100%; 
   }
   
   #company-logo {
@@ -40,4 +51,54 @@
   nav a {
     padding: 25px;
   }
+
+  #content {
+    grid-area: content;  
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: 
+      "home" 
+      "services";
+  }
+
+  #home {
+    grid-area: home;
+  }
+
+  #services {
+    grid-area: services;
+  }
+
+  .section {
+    border: 5px solid black;
+    margin: 25px;
+    padding: 0;  
+    background-color:  #f1ede3 ;  
+  }
+
+  .section-heading {
+    background-color: white;
+    margin: 0;
+    height: 3em;
+    width: 100%;
+    border-bottom: 5px solid black;
+  }
+
+  #footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    position: sticky;
+    bottom: 0;
+  }
+
+  @media only screen and (min-width: 600px) {
+    #content {
+      grid-template-areas:
+        "home" .
+        "services"; 
+    }
+  }
+
   
