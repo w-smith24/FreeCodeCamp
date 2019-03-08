@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+}
+
+#navbar header {
+  display: inline;
+  font-size: 1.7em;
+  font-weight: 300;
+}
+
+#nav-header {
+  line-height: 3em;
+}
+
+.fa-vuejs {
+  color: green;
+  font-size: 3em;
+  vertical-align: middle;
+  margin-right: .2em;
+}
+
+#navbar {
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar a {
+  display: block;
+  margin: .5em;
+  text-decoration: none;
+  color: grey;
+  font-size: 2em;
+}
+
+#navbar a:hover {
+  color: green;
+}
+
+#main-doc {
+  font-size: 1.7em;
+  color: #34495e;
+  padding: 1em;
+}
+
+hr { 
+  opacity: .2
+}
+
+#main-doc header {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  color: green;
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0 1em;
+}
+
+h3 {
+  text-align: center;
+}
+
+code {
+  background-color: #f2f2f2
+}
+
+code.whole-line {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  margin: 1em;
+}
+
+.large {
+  font-size: 2em;
+}
+
+.orange {
+  color: orange;
+}
+
+.green {
+  color: green;
+  text-decoration: none;
+}
+
+.demo {
+  border: 1px solid #eee;
+  line-height: 1.5em;
+  margin: 1em;
+  padding: 1em;
+}
+
+@media only screen and (min-width: 992px){
+  #main-body {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-template-areas: "navbar mainContent";
+  }
+  
+  #navbar {
+    grid-area: navbar;
+    position: fixed;
+    margin-left: 2em;
+    border-right: 1em solid green;
+    height: 100%;
+    padding: 1em;
+    top: 0;
+    align-items: start;
+    justify-content: start;
+  }
+  
+  #navbar a {
+    padding-top: 1.5em;
+  }
+  
+  #main-doc {
+    grid-area: mainContent;
+    padding: 0;
+    margin-top: 2em;
+    width: 100%;
+  }
+}
